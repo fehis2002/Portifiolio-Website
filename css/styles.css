@@ -30,7 +30,7 @@ header a {
     padding: 5px 0;
 }
 
-header a:visited, header a:hover, header a:active {
+header a:visited, header a:hover, header a:active, header a{
     color:#ECF9FF;
 }
 
@@ -46,6 +46,7 @@ main > section:first-child {
     background-image: url("../images/luffy.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: #060047;
     height: 400px;
     opacity: 0.75;
     border-bottom: 3px solid #060047;
