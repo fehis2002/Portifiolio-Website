@@ -37,7 +37,7 @@ header a:visited, header a:hover, header a:active {
 /* Main */
 
 main {
-    height: 1300px;
+    height: 750px;
 }
 
 main > section:first-child {
@@ -103,7 +103,7 @@ main > section > p:first-child {
 }
 
 #projects {
-  display: grid;
+  display: none;
   margin: 0 auto;
   margin-top: 20px;
   width: 450px;
@@ -119,6 +119,11 @@ main > section > p:first-child {
 
 main > section:nth-child(3) > h2:last-child {
     margin-top: 20px;
+    display: none;
+}
+
+main > section:nth-child(3) > h2:last-child:hover {
+    cursor: pointer;
 }
 
 #contact-links {
@@ -193,6 +198,10 @@ footer > p {
     }
     
     /* Main */
+
+    main {
+        height: 750px;
+    }
 
     main > section:first-child {
     width: auto;
@@ -280,6 +289,11 @@ footer > p {
         border-bottom: solid 2px #ECF9FF;
     }
 
+    /* Main */
+
+    main {
+        height: 800px;
+    }
 
     #projects {
         margin: 0 auto;
