@@ -34,7 +34,103 @@ header a:visited, header a:hover, header a:active {
     color:#ECF9FF;
 }
 
-@media screen and (min-width: 750px) {
+/* Main */
+
+main {
+    height: 1300px;
+}
+
+main > section:first-child {
+    width: auto;
+    text-align: center;
+    background-image: url("../images/luffy.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    opacity: 0.75;
+    border-bottom: 3px solid #060047;
+    border-top: 3px solid #ECF9FF;
+}
+
+main > section:first-child > h1 {
+    line-height: 400px;
+    color: #ECF9FF;
+    opacity: 1;
+}
+
+main > section:nth-child(2) {
+    margin-top: 50px;
+    text-align: center;
+    height: 100px;
+}
+
+main > section:nth-child(2) > p:nth-child(2) {
+    text-align: justify;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+main > section:nth-child(2) > p:nth-child(3) {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main > section:nth-child(3) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main > section:nth-child(3) > h2 {
+    text-align: center;
+    background-color: #ECF9FF;
+    width: 200px;
+    margin: 0 auto;
+    color:#060047;
+    padding: 10px;
+    border: 2px solid #060047;
+    box-shadow: 2px 3px 5px;
+}
+
+main > section:nth-child(3) > h2:hover {
+    cursor: pointer;
+}
+
+
+#projects {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 450px;
+  grid-template-columns: 1fr; 
+  row-gap: 10px;
+  margin-bottom: 20px; 
+}
+
+#projects > article {
+    border: 2px solid #060047;
+    padding: 20px;
+}
+
+main > section:nth-child(3) > h2:last-child {
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+   height: 100px;
+   background-color: #060047; 
+   color:#ECF9FF;
+}
+
+footer > p {
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (min-width: 750px) and (max-width: 1049px) {
 
     /* Header */
 
@@ -77,5 +173,92 @@ header a:visited, header a:hover, header a:active {
         border-bottom: solid 2px #ECF9FF;
     }
     
+    /* Main */
+
+    main > section:first-child {
+    width: auto;
+    text-align: center;
+    background-image: url("../images/luffy.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    opacity: 0.75;
+    }
+
+    main > section:first-child > h1 {
+    line-height: 250px;
+    color: #ECF9FF;
+    opacity: 1;
+    }
+
+    #projects {
+        grid-template-columns: 1fr 1fr; 
+        row-gap: 10px; 
+        column-gap: 20px;
+      }
+
+      #projects > article {
+        border: 2px solid #060047;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    /* Header */
+
+    header {
+        background-color: #060047;
+        color:#ECF9FF;
+        height: 50px;
+    }
+    
+    header > nav {
+        text-align: center;
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    
+    header ol {
+        margin-top: 20px;
+        vertical-align: 50px;
+    }
+    header li {
+        display: inline;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    header li:nth-child(-n+2) {
+        border-right: solid 1px #ECF9FF;
+    }
+    
+    header a {
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    
+    header a:visited, header a:hover, header a:active {
+        color:#ECF9FF;
+    }
+    
+    header a:hover {
+        border-bottom: solid 2px #ECF9FF;
+    }
+
+    
+    #projects {
+        margin: 0 auto;
+        width: 950px;
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr; 
+        row-gap: 10px; 
+        column-gap: 20px;
+      }
+
+      #projects > article {
+        border: 2px solid #060047;
+        padding: 20px;
+        width: 250px;
+    }
 }
 
