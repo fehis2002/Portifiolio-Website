@@ -155,6 +155,9 @@ footer > p {
     text-align: center;
     font-weight: bold;
 }
+
+/* Media queries */
+
 @media screen and (min-width: 750px) and (max-width: 1049px) {
 
     /* Header */
